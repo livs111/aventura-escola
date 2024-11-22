@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700&display=swap" rel="stylesheet">
+    <title>Em busca do tesouro da escola</title>
+</head>
+<body>
+    <main>
+        <div class="passo ativo" id="passo-0">
+            <img src="img/cenario-passo0.png" alt="">
+            <p>Durante uma arrumação no sótão da escola, encontrei um diário antigo de um professor que menciona um tesouro escondido no prédio. O diário está cheio de pistas que parecem levar até ele. Decidi seguir as pistas para desvendar esse mistério!</p>
+            <button class="btn-proximo" data-proximo="1">Investigar a biblioteca</button>
+            <button class="btn-proximo" data-proximo="2">Explorar o laboratório de ciências</button>
+        </div>
+        <div class="passo" id="passo-1">
+            <p>Na biblioteca, encontro um livro antigo que parece estar fora do lugar. Dentro dele, há uma pista que sugere procurar na sala de música.</p>
+            <button class="btn-proximo" data-proximo="3">Ir para a sala de música</button>
+            <button class="btn-proximo" data-proximo="4">Desistir e voltar para casa</button>
+        </div>
+        <div class="passo" id="passo-2">
+            <p>No laboratório de ciências, uma gaveta trancada chama atenção. Após abri-la, encontro um mapa indicando que a próxima pista está na quadra esportiva. Para onde vou agora?</p>
+            <button class="btn-proximo" data-proximo="5">Seguir para a quadra esportiva</button>
+            <button class="btn-proximo" data-proximo="6">Procurar mais no laboratório</button>
+        </div>
+        <div class="passo" id="passo-3">
+            <p>Na sala de música, encontro uma partitura com anotações que levam ao teatro da escola.</p>
+            <button class="btn-proximo" data-proximo="7">Seguir para o teatro</button>
+        </div>
+        <div class="passo" id="passo-4">
+            <img src="img/cenario-passo4-voltar-casa.png" alt="imagem voltando para casa e desistindo da aventura">
+            <p>Você decide que a busca pelo tesouro é complicada demais e volta para casa, mas sempre se pergunta o que poderia ter encontrado.</p>
+        </div>
+        <div class="passo" id="passo-5">
+            <p>Na quadra esportiva, encontro uma bola com um bilhete escondido dentro. Ele indica que a próxima pista está no teatro.</p>
+            <button class="btn-proximo" data-proximo="7">Ir para o teatro</button>
+        </div>
+        <div class="passo" id="passo-6">
+            <p>Procurando mais no laboratório, encontro apenas equipamentos de ciência. Parece que a pista na gaveta era mesmo a única relevante.</p>
+            <button class="btn-proximo" data-proximo="5">Seguir para a quadra esportiva</button>
+        </div>
+        <div class="passo" id="passo-7">
+            <p>No teatro, encontro uma chave dentro de um baú velho. Uma placa ao lado indica que a chave abre uma sala secreta no sótão.</p>
+            <button class="btn-proximo" data-proximo="9">Subir para o sótão</button>
+        </div>
+        <div class="passo" id="passo-9">
+            <p>No sótão, encontro uma porta trancada. Com a chave, abro a sala secreta e descubro um baú cheio de materiais históricos e cartas antigas que contam a história da escola.</p>
+            <button class="btn-proximo" data-proximo="11">Explorar o conteúdo do baú</button>
+        </div>
+        <div class="passo" id="passo-11">
+            <img src="img/cenario-passo11-tesouro-escola.png" alt="encontrando o tesouro escondido na escola">
+            <p>Dentro do baú, descubro um tesouro inestimável de artefatos e histórias da escola. Decido compartilhar essa descoberta com todos, ajudando a preservar a memória desse lugar tão especial.</p>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
